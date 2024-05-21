@@ -113,7 +113,7 @@ public class OperacoesLocais{
                     resultado += vizinhanca[i] * kernel[i];
                 }
 
-                Color novaCor = new Color (validaLimiteRGBS((int) resultado),validaLimiteRGBS((int) resultado), validaLimiteRGBS((int) resultado));
+                Color novaCor = new Color ((int) resultado,(int) resultado,(int) resultado);
                 imgSaida.setRGB(w, h, novaCor.getRGB());
             }
 
